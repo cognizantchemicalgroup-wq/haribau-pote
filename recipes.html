@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Recipes - Haribau Pote Masala</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Martel:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Haribau Pote</h1>
+                    <p class="tagline">Traditional Masala Since 1985</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="cart-icon" id="cartBtn">
+                        <span>🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a></li>
+                </ul>
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Traditional Recipes</h1>
+            <p>Discover authentic Maharashtrian dishes made with Haribau Pote Masala</p>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="recipes-section">
+        <div class="container">
+            <div class="recipes-grid">
+                <!-- Recipe 1 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-img-placeholder">
+                            <span class="placeholder-text">Pote Bhaji</span>
+                        </div>
+                        <div class="recipe-badge">Traditional</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Pote Bhaji</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 30 mins</span>
+                            <span>👨‍🍳 Easy</span>
+                            <span>🍽️ 4 servings</span>
+                        </div>
+                        <p class="recipe-desc">Classic Maharashtrian curry made with mixed vegetables and Haribau Pote Masala</p>
+                        <button class="btn-recipe" onclick="openRecipe('pote-bhaji')">View Recipe</button>
+                    </div>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-img-placeholder">
+                            <span class="placeholder-text">Matki Usal</span>
+                        </div>
+                        <div class="recipe-badge">Popular</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Matki Usal</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 45 mins</span>
+                            <span>👨‍🍳 Medium</span>
+                            <span>🍽️ 4 servings</span>
+                        </div>
+                        <p class="recipe-desc">Sprouted moth beans curry bursting with flavors of our signature pote masala</p>
+                        <button class="btn-recipe" onclick="openRecipe('matki-usal')">View Recipe</button>
+                    </div>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-img-placeholder">
+                            <span class="placeholder-text">Batata Rassa</span>
+                        </div>
+                        <div class="recipe-badge">Bestseller</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Batata Rassa</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 25 mins</span>
+                            <span>👨‍🍳 Easy</span>
+                            <span>🍽️ 4 servings</span>
+                        </div>
+                        <p class="recipe-desc">Spicy potato curry perfect with puris or bhakri, a Maharashtrian breakfast favorite</p>
+                        <button class="btn-recipe" onclick="openRecipe('batata-rassa')">View Recipe</button>
+                    </div>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-img-placeholder">
+                            <span class="placeholder-text">Misal Pav</span>
+                        </div>
+                        <div class="recipe-badge">Spicy</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Misal Pav</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 40 mins</span>
+                            <span>👨‍🍳 Medium</span>
+                            <span>🍽️ 4 servings</span>
+                        </div>
+                        <p class="recipe-desc">Iconic Maharashtra street food with spicy sprouted lentils topped with farsan</p>
+                        <button class="btn-recipe" onclick="openRecipe('misal-pav')">View Recipe</button>
+                    </div>
+                </div>
+
+                <!-- Recipe 5 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-img-placeholder">
+                            <span class="placeholder-text">Varan Bhaat</span>
+                        </div>
+                        <div class="recipe-badge">Comfort</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Varan Bhaat</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 35 mins</span>
+                            <span>👨‍🍳 Easy</span>
+                            <span>🍽️ 4 servings</span>
+                        </div>
+                        <p class="recipe-desc">Comforting dal-rice combination, a staple in every Maharashtrian household</p>
+                        <button class="btn-recipe" onclick="openRecipe('varan-bhaat')">View Recipe</button>
+                    </div>
+                </div>
+
+                <!-- Recipe 6 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-img-placeholder">
+                            <span class="placeholder-text">Bharli Vangi</span>
+                        </div>
+                        <div class="recipe-badge">Special</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Bharli Vangi</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 50 mins</span>
+                            <span>👨‍🍳 Hard</span>
+                            <span>🍽️ 4 servings</span>
+                        </div>
+                        <p class="recipe-desc">Stuffed eggplant with coconut-peanut masala, a festive delicacy</p>
+                        <button class="btn-recipe" onclick="openRecipe('bharli-vangi')">View Recipe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal recipe-modal">
+        <div class="modal-content recipe-modal-content">
+            <span class="close">&times;</span>
+            <div id="recipeDetails"></div>
+        </div>
+    </div>
+
+    <!-- Cooking Tips -->
+    <section class="cooking-tips">
+        <div class="container">
+            <h2>Cooking Tips from Our Kitchen</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">🌡️</div>
+                    <h3>Perfect Roasting</h3>
+                    <p>For enhanced aroma, dry roast Haribau Pote Masala for 30 seconds before adding to your curry</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🥄</div>
+                    <h3>Right Quantity</h3>
+                    <p>Use 1-2 tablespoons per kg of vegetables or curry. Adjust according to your spice preference</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">💧</div>
+                    <h3>Water Balance</h3>
+                    <p>Add masala to tempering before water to release flavors better and prevent lumps</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📦</div>
+                    <h3>Storage</h3>
+                    <p>Store in an airtight container in a cool, dry place away from direct sunlight</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Request -->
+    <section class="recipe-request">
+        <div class="container">
+            <div class="request-content">
+                <h2>Have a Recipe Request?</h2>
+                <p>Share your favorite dish and we'll create a recipe using Haribau Pote Masala</p>
+                <a href="contact.html" class="btn btn-primary">Submit Your Request</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Haribau Pote</h3>
+                    <p>Bringing authentic Maharashtrian flavors to your home since 1985.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📍 Shop No. 12, Main Market</li>
+                        <li>Panvel, Maharashtra 410206</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ info@haribaupote.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Haribau Pote. All rights reserved. | Made with ❤️ in Panvel, Maharashtra</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cartTotal">0</span></strong>
+            </div>
+            <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>
