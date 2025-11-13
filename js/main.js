@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Razorpay options
             const options = {
-                key: "rzp_test_RfEJN3eCaXca1a", // Replace with yoour Razorpay Key ID
+                key: "rzp_live_RfEwTUAlZxKADX", // Replace with yoour Razorpay Key ID
                 amount: totalAmount * 100, // Convert to paise
                 currency: "INR",
                 name: "Haribau Pote",
